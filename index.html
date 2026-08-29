@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kovai Legal Associates, Coimbatore. General information and appointment request facility.">
+  <title>Kovai Legal Associates | Coimbatore</title>
+  <style>
+    :root { --dark:#171717; --gold:#b8954f; --gold-light:#d4ba7a; --cream:#f7f5ef; --text:#333; --muted:#6f6f6f; --border:#dedbd2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--cream); color:var(--text); line-height:1.6; }
+    header { background:var(--dark); color:white; border-bottom:3px solid var(--gold); }
+    .topbar { max-width:1150px; margin:auto; padding:22px 24px; display:flex; justify-content:space-between; align-items:center; gap:25px; }
+    .brand h1 { margin:0; color:var(--gold-light); font-family:Georgia,serif; font-size:30px; }
+    .brand p { margin:4px 0 0; color:#ddd; font-size:14px; }
+    nav { display:flex; gap:20px; flex-wrap:wrap; }
+    nav a { color:white; text-decoration:none; font-size:14px; }
+    nav a:hover { color:var(--gold-light); }
+    .hero { background:linear-gradient(rgba(20,20,20,.92),rgba(20,20,20,.92)); color:white; padding:90px 24px; }
+    .hero-inner { max-width:1000px; margin:auto; text-align:center; }
+    .eyebrow { color:var(--gold-light); text-transform:uppercase; letter-spacing:2px; font-size:13px; font-weight:bold; }
+    .hero h2 { margin:14px auto; font-family:Georgia,serif; font-size:48px; max-width:850px; line-height:1.15; }
+    .hero p { max-width:750px; margin:20px auto 30px; color:#e1e1e1; font-size:17px; }
+    .button { display:inline-block; background:var(--gold); color:#111; padding:13px 22px; border-radius:4px; text-decoration:none; font-weight:bold; border:none; cursor:pointer; font-size:15px; }
+    section { padding:70px 24px; }
+    .container { max-width:1100px; margin:auto; }
+    .section-heading { text-align:center; margin-bottom:38px; }
+    .section-heading span { color:var(--gold); text-transform:uppercase; font-weight:bold; letter-spacing:1.5px; font-size:13px; }
+    .section-heading h2 { margin:8px 0; font-family:Georgia,serif; font-size:34px; color:var(--dark); }
+    .section-heading p { max-width:720px; margin:auto; color:var(--muted); }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .card { background:white; border:1px solid var(--border); border-radius:6px; padding:28px; }
+    #appointment { background:#ece9e1; }
+    .appointment-wrapper { display:grid; grid-template-columns:.8fr 1.2fr; gap:30px; align-items:start; }
+    .appointment-info { background:var(--dark); color:white; padding:32px; border-radius:6px; }
+    .appointment-info h3 { color:var(--gold-light); margin-top:0; font-family:Georgia,serif; font-size:26px; }
+    form { background:white; padding:32px; border-radius:6px; border:1px solid var(--border); }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .field { margin-bottom:18px; }
+    .field.full { grid-column:1/-1; }
+    label { display:block; margin-bottom:7px; font-weight:bold; font-size:14px; color:var(--dark); }
+    input,select,textarea { width:100%; padding:12px; border:1px solid #cfcfcf; border-radius:4px; font-size:15px; }
+    textarea { min-height:110px; resize:vertical; }
+    .privacy-note { font-size:12px; color:var(--muted); margin:5px 0 20px; }
+    #formStatus { display:none; margin-top:18px; padding:14px; background:#eaf4ed; color:#245c3a; border-radius:4px; font-weight:bold; }
+    .disclaimer { background:#f3f1eb; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+    .disclaimer p { max-width:900px; margin:auto; font-size:13px; color:#666; text-align:center; }
+    footer { background:var(--dark); color:#ccc; padding:35px 24px; text-align:center; font-size:13px; }
+    footer strong { color:var(--gold-light); }
+    @media(max-width:850px) {
+      .topbar { flex-direction:column; text-align:center; }
+      nav { justify-content:center; }
+      .hero h2 { font-size:36px; }
+      .grid-3,.appointment-wrapper,.form-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <h1>Kovai Legal Associates</h1>
+      <p>Coimbatore, Tamil Nadu</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#practice">Areas of Practice</a>
+      <a href="#appointment">Appointment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Legal Information & Client Assistance</div>
+    <h2>Kovai Legal Associates</h2>
+    <p>Providing legal assistance and professional consultation in Coimbatore, Tamil Nadu. Visitors may use this website to obtain general information and request an appointment.</p>
+    <a class="button" href="#appointment">Request an Appointment</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-heading">
+      <span>About</span>
+      <h2>Kovai Legal Associates</h2>
+      <p>This website provides general information about the firm and a convenient facility for clients to request consultations.</p>
+    </div>
+  </div>
+</section>
+
+<section id="practice" style="background:white;">
+  <div class="container">
+    <div class="section-heading">
+      <span>Practice</span>
+      <h2>Areas of Legal Assistance</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><h3>Criminal Matters</h3><p>Consultation regarding criminal proceedings, court matters and related legal issues.</p></div>
+      <div class="card"><h3>Civil Matters</h3><p>Consultation relating to civil disputes, property issues and other civil proceedings.</p></div>
+      <div class="card"><h3>Other Legal Matters</h3><p>Appointment requests may also be submitted for other legal matters requiring consultation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="appointment">
+  <div class="container">
+    <div class="section-heading">
+      <span>Client Assistance</span>
+      <h2>Request an Appointment</h2>
+      <p>Submit your preferred appointment details. The request is subject to confirmation.</p>
+    </div>
+
+    <div class="appointment-wrapper">
+      <div class="appointment-info">
+        <h3>Consultation Request</h3>
+        <p>Please provide basic contact and appointment information.</p>
+        <p>Do not submit confidential documents, evidence, passwords, financial information, or detailed sensitive information through this form.</p>
+        <p>Submission of this form does not by itself establish an advocate-client relationship.</p>
+      </div>
+
+      <form id="appointmentForm" action="YOUR_APPS_SCRIPT_WEB_APP_URL" method="POST" target="submissionFrame">
+        <div class="form-grid">
+          <div class="field">
+            <label for="clientName">Full Name *</label>
+            <input id="clientName" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+          </div>
+          <div class="field">
+            <label for="appointmentDate">Preferred Date *</label>
+            <input id="appointmentDate" name="appointmentDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="appointmentTime">Preferred Time *</label>
+            <select id="appointmentTime" name="appointmentTime" required>
+              <option value="">Select preferred time</option>
+              <option value="9:30 AM - 11:00 AM">9:30 AM - 11:00 AM</option>
+              <option value="11:00 AM - 1:00 PM">11:00 AM - 1:00 PM</option>
+              <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+              <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="consultationType">Consultation Type *</label>
+            <select id="consultationType" name="consultationType" required>
+              <option value="">Select consultation type</option>
+              <option value="In-Person">In-Person</option>
+              <option value="Telephone">Telephone</option>
+              <option value="Video Consultation">Video Consultation</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="matterType">Matter Type *</label>
+            <select id="matterType" name="matterType" required>
+              <option value="">Select matter type</option>
+              <option value="Criminal Matter">Criminal Matter</option>
+              <option value="Civil Matter">Civil Matter</option>
+              <option value="Property Matter">Property Matter</option>
+              <option value="Family Matter">Family Matter</option>
+              <option value="Other Legal Matter">Other Legal Matter</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Brief Note</label>
+            <textarea id="message" name="message" maxlength="750" placeholder="Please provide only a short general description."></textarea>
+          </div>
+        </div>
+        <p class="privacy-note">Please do not enter confidential evidence, passwords, account information or highly sensitive personal information.</p>
+        <button class="button" type="submit">Submit Appointment Request</button>
+        <div id="formStatus">Your appointment request has been submitted.</div>
+      </form>
+
+      <iframe name="submissionFrame" id="submissionFrame" style="display:none;"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:white;">
+  <div class="container">
+    <div class="section-heading">
+      <span>Contact</span>
+      <h2>Kovai Legal Associates</h2>
+      <p>Coimbatore, Tamil Nadu</p>
+    </div>
+  </div>
+</section>
+
+<section class="disclaimer">
+  <div class="container">
+    <p>Disclaimer: The information provided on this website is general in nature and is not intended to constitute legal advice. Use of this website or submission of an appointment request does not by itself create an advocate-client relationship. Legal advice should be obtained from a qualified advocate based on the facts and circumstances of the individual matter.</p>
+  </div>
+</section>
+
+<footer>
+  <strong>Kovai Legal Associates</strong><br>
+  Coimbatore, Tamil Nadu
+</footer>
+
+<script>
+  const form = document.getElementById("appointmentForm");
+  const formStatus = document.getElementById("formStatus");
+  const dateInput = document.getElementById("appointmentDate");
+
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, "0");
+  const dd = String(today.getDate()).padStart(2, "0");
+  dateInput.min = `${yyyy}-${mm}-${dd}`;
+
+  form.addEventListener("submit", function () {
+    formStatus.style.display = "none";
+    setTimeout(function () {
+      formStatus.style.display = "block";
+    }, 1200);
+  });
+</script>
+</body>
+</html>
