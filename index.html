@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kovai Legal Associates - informational legal website in Coimbatore, Tamil Nadu.">
+  <title>Kovai Legal Associates | Coimbatore</title>
+
+  <style>
+    :root {
+      --dark:#202830; --dark2:#151b21; --gold:#d0ad55; --gold-dark:#ae8c39;
+      --light:#f6f7f8; --white:#fff; --text:#1f2933; --muted:#69727d;
+      --border:#dde1e5; --max-width:1100px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(92%,var(--max-width));margin:auto}
+    header{background:var(--dark);color:white;position:sticky;top:0;z-index:1000}
+    .navbar{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .logo img{width:210px;max-height:65px;object-fit:contain}
+    nav{display:flex;flex-wrap:wrap;gap:22px;font-size:15px}
+    nav a:hover{color:var(--gold)}
+    .hero{background:linear-gradient(135deg,#202830,#313d48);color:white;padding:110px 0}
+    .hero-content{max-width:720px}
+    .small-title{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:10px}
+    .hero h1{font-size:clamp(40px,7vw,70px);font-weight:500;line-height:1.05;margin-bottom:20px}
+    .hero p{font-size:18px;color:#e7eaed;max-width:640px;margin-bottom:28px}
+    .button{display:inline-block;border:none;background:var(--gold);color:#161b20;padding:14px 22px;border-radius:6px;font-weight:bold;cursor:pointer;font-size:15px}
+    .button:hover{background:var(--gold-dark)}
+    section{padding:75px 0}
+    .section-heading{text-align:center;margin-bottom:38px}
+    .section-heading span{color:var(--gold-dark);text-transform:uppercase;font-size:13px;letter-spacing:2px;font-weight:bold}
+    .section-heading h2{font-size:34px;font-weight:500;margin-top:6px}
+    .grid-2,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .card{background:white;border:1px solid var(--border);padding:28px;border-radius:12px}
+    .card h3{margin-bottom:10px}
+    .muted{color:var(--muted)}
+    .practice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .practice-card{border-top:4px solid var(--gold)}
+    #appointment{background:#edf0f2}
+    form{display:grid;gap:16px}
+    label{font-weight:bold;font-size:14px;display:block;margin-bottom:5px}
+    input,select,textarea{width:100%;padding:13px;border:1px solid #cbd1d7;border-radius:6px;font-family:inherit;font-size:16px;background:white}
+    textarea{min-height:90px;resize:vertical}
+    .privacy-note{background:#f7f7f7;padding:14px;border-left:4px solid var(--gold);font-size:13px;color:var(--muted)}
+    .success-message{display:none;margin-top:15px;padding:15px;border-radius:6px;background:#eef5ef;border:1px solid #b9d3bd}
+    .disclaimer{background:var(--dark);color:#e8ebed;padding:28px;border-radius:10px;font-size:14px}
+    footer{background:var(--dark2);color:#ccd2d7;text-align:center;padding:28px 0}
+    footer strong{color:white}
+    @media(max-width:760px){
+      .navbar{flex-direction:column;align-items:flex-start;padding:15px 0}
+      nav{gap:14px}.grid-2,.practice-grid,.contact-grid{grid-template-columns:1fr}
+      .hero{padding:75px 0}section{padding:55px 0}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container navbar">
+    <a class="logo" href="#home">
+      <img src="assets/kovai-legal-associates-logo.png" alt="Kovai Legal Associates">
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#practice">Practice Areas</a>
+      <a href="#appointment">Appointment</a>
+      <a href="#contact">Contact</a>
+      <a href="#disclaimer">Disclaimer</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="small-title">Informational Legal Website</div>
+    <h1>Kovai Legal Associates</h1>
+    <p>Legal information, client assistance and consultation support in Coimbatore, Tamil Nadu.</p>
+    <a class="button" href="#appointment">Request an Appointment</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-heading"><span>About</span><h2>About the Firm</h2></div>
+    <div class="grid-2">
+      <div class="card"><h3>Kovai Legal Associates</h3><p>Kovai Legal Associates is a legal practice located in Coimbatore, Tamil Nadu.</p></div>
+      <div class="card"><h3>Purpose of this Website</h3><p class="muted">This website provides general information about the firm's legal services and allows visitors to request consultations and contact the office.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="container">
+    <div class="section-heading"><span>Services</span><h2>Areas of Practice</h2></div>
+    <div class="practice-grid">
+      <div class="card practice-card"><h3>Criminal Law</h3><p class="muted">General assistance relating to criminal proceedings, bail matters, trial preparation and court representation.</p></div>
+      <div class="card practice-card"><h3>Civil Matters</h3><p class="muted">General assistance relating to civil disputes, property matters, notices and litigation support.</p></div>
+      <div class="card practice-card"><h3>Family Matters</h3><p class="muted">Information and consultation support relating to family disputes and related proceedings.</p></div>
+      <div class="card practice-card"><h3>Legal Documentation</h3><p class="muted">General support relating to legal documentation, notices, petitions and affidavits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="appointment">
+  <div class="container">
+    <div class="section-heading"><span>Client Assistance</span><h2>Request an Appointment</h2></div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Consultation Request</h3>
+        <!-- IMPORTANT: Replace YOUR_GOOGLE_APPS_SCRIPT_URL below with the /exec URL from your deployed Google Apps Script. -->
+        <form id="appointmentForm" action="YOUR_GOOGLE_APPS_SCRIPT_URL" method="POST" target="hidden_iframe">
+          <div><label for="clientName">Full Name *</label><input type="text" id="clientName" name="name" required></div>
+          <div><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required></div>
+          <div><label for="email">Email</label><input type="email" id="email" name="email"></div>
+          <div><label for="appointmentDate">Preferred Appointment Date *</label><input type="date" id="appointmentDate" name="appointmentDate" required></div>
+          <div>
+            <label for="appointmentTime">Preferred Time *</label>
+            <select id="appointmentTime" name="appointmentTime" required>
+              <option value="">Select preferred time</option>
+              <option>9:30 AM - 11:00 AM</option>
+              <option>11:00 AM - 1:00 PM</option>
+              <option>2:00 PM - 4:00 PM</option>
+              <option>4:00 PM - 6:00 PM</option>
+            </select>
+          </div>
+          <div>
+            <label for="consultationType">Consultation Type</label>
+            <select id="consultationType" name="consultationType">
+              <option>In-Person</option><option>Phone</option><option>Video Consultation</option>
+            </select>
+          </div>
+          <div>
+            <label for="matterType">General Matter Type</label>
+            <select id="matterType" name="matterType">
+              <option>General Consultation</option><option>Criminal Matter</option><option>Civil Matter</option>
+              <option>Family Matter</option><option>Document Related</option><option>Other</option>
+            </select>
+          </div>
+          <div><label for="message">Brief Note</label><textarea id="message" name="message" placeholder="Please provide only a brief reason for requesting the appointment."></textarea></div>
+          <div class="privacy-note">Please do not submit confidential documents, case evidence or detailed sensitive information through this appointment form.</div>
+          <button class="button" type="submit">Submit Appointment Request</button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+          <strong>Appointment request received.</strong><br>
+          The office will review your request and contact you regarding confirmation.
+        </div>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      </div>
+
+      <div class="card">
+        <h3>How Appointment Requests Work</h3>
+        <p><strong>1.</strong> Submit your preferred appointment details.</p><br>
+        <p><strong>2.</strong> The request is recorded for office review.</p><br>
+        <p><strong>3.</strong> The office reviews availability.</p><br>
+        <p><strong>4.</strong> The client is contacted to confirm the appointment.</p><br>
+        <p class="muted">Submitting this form does not automatically create an advocate-client relationship or guarantee an appointment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-heading"><span>Contact</span><h2>Contact the Office</h2></div>
+    <div class="contact-grid">
+      <div class="card"><h3>Office</h3><p class="muted">Coimbatore<br>Tamil Nadu<br>India</p></div>
+      <div class="card"><h3>Contact Details</h3><p class="muted">Phone: +91 XXXXX XXXXX<br>Email: contact@example.com<br><br>Office Hours:<br>Monday-Saturday<br>9:30 AM-6:00 PM</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="disclaimer">
+  <div class="container">
+    <div class="section-heading"><span>Important Information</span><h2>Disclaimer</h2></div>
+    <div class="disclaimer">
+      This website is intended for general informational and client-assistance purposes only.
+      Nothing contained on this website should be treated as legal advice.
+      Submission of an appointment request or communication through this website does not by itself create an advocate-client relationship.
+      For advice concerning a specific legal matter, please consult a qualified advocate.
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><strong>Kovai Legal Associates</strong><br>Coimbatore, Tamil Nadu</div></footer>
+
+<script>
+  const form = document.getElementById("appointmentForm");
+  const successMessage = document.getElementById("successMessage");
+  const dateInput = document.getElementById("appointmentDate");
+
+  // Prevent selecting a past date.
+  const now = new Date();
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  dateInput.min = `${yyyy}-${mm}-${dd}`;
+
+  form.addEventListener("submit", function () {
+    // This message is shown after submission. The actual data is sent to
+    // the Google Apps Script URL configured in the form action.
+    setTimeout(function () {
+      form.style.display = "none";
+      successMessage.style.display = "block";
+      successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 800);
+  });
+</script>
+</body>
+</html>
